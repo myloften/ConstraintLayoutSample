@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main4Activity">
+    
+    <android.support.constraint.Guideline
+        android:id="@+id/left_16dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/right_16dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="距离左边距16dp"
+        app:layout_constraintLeft_toRightOf="@+id/left_16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="距离右边距16dp"
+        app:layout_constraintRight_toLeftOf="@+id/right_16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我在水平方向中间"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_center"
+        app:layout_constraintRight_toRightOf="@+id/vertical_center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我在竖直方向中间"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_center"
+        app:layout_constraintBottom_toBottomOf="@+id/horizontal_center"/>
+
+</android.support.constraint.ConstraintLayout>

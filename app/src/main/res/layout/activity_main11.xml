@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main11Activity">
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换layout"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="哈哈哈"
+        app:layout_constraintTop_toBottomOf="@+id/bt1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是bt2"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是bt3"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/bt2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是bt4"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bt3"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="改变属性"
+        app:layout_constraintLeft_toRightOf="@+id/bt1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"/>
+
+    <Button
+        android:id="@+id/bt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重置"
+        app:layout_constraintLeft_toRightOf="@+id/bt5"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"/>
+</android.support.constraint.ConstraintLayout>

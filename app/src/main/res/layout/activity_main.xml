@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="8dp" />
+
+
+        <Button
+            android:id="@+id/bt_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RelativeLayout"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toRightOf="@+id/gl1" />
+
+        <Button
+            android:id="@+id/bt_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="LinearLayout"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toRightOf="@+id/gl1"
+            app:layout_constraintTop_toBottomOf="@+id/bt_layout1" />
+
+        <Button
+            android:id="@+id/bt_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Guideline辅助线"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toRightOf="@+id/gl1"
+            app:layout_constraintTop_toBottomOf="@+id/bt_layout2" />
+
+        <Button
+            android:id="@+id/bt_layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="宽高比"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toRightOf="@+id/gl1"
+            app:layout_constraintTop_toBottomOf="@+id/bt_layout3" />
+
+        <Button
+            android:id="@+id/bt_layout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="gone"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toRightOf="@+id/gl1"
+            app:layout_constraintTop_toBottomOf="@+id/bt_layout4" />
+
+        <Button
+            android:id="@+id/bt_layout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="百分比布局"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toRightOf="@+id/gl1"
+            app:layout_constraintTop_toBottomOf="@+id/bt_layout5" />
+
+        <Button
+            android:id="@+id/bt_layout7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="圆形定位"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toRightOf="@+id/gl1"
+            app:layout_constraintTop_toBottomOf="@+id/bt_layout6" />
+
+        <Button
+            android:id="@+id/bt_layout8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Barrier辅助线及Group"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toRightOf="@+id/gl1"
+            app:layout_constraintTop_toBottomOf="@+id/bt_layout7" />
+
+        <Button
+            android:id="@+id/bt_layout9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Placeholder占位"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toRightOf="@+id/gl1"
+            app:layout_constraintTop_toBottomOf="@+id/bt_layout8" />
+
+        <Button
+            android:id="@+id/bt_layout10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="动画"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toRightOf="@+id/gl1"
+            app:layout_constraintTop_toBottomOf="@+id/bt_layout9" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
